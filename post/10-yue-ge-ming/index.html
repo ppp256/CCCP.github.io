@@ -1,79 +1,81 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>10月革命 | 苏维埃社会主义共和国联盟</title>
+<meta name="description" content="CCCP">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://CCCP.github.io/favicon.ico?v=1615638759413">
+<link rel="shortcut icon" href="https://CCCP.github.io/favicon.ico?v=1615640305199">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://CCCP.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="俄国十月革命，又称红色十月、十月起义、彼得格勒武装起义或布尔什维克革命，获胜的苏联红军一方称之为“伟大的十月社会主义革命”，是俄国工人阶级在布尔什维克党领导下联合贫农所完成的伟大的社会主义革命，是1917年俄国革命中第二个、也是最后的重要阶..." />
-    <meta name="keywords" content="10月革命" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://CCCP.github.io">
-        <img src="https://CCCP.github.io/images/avatar.png?v=1615638759413" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://CCCP.github.io">
+        <img class="avatar" src="https://CCCP.github.io/images/avatar.png?v=1615640305199" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://CCCP.github.io">
         <h1 class="site-title">苏维埃社会主义共和国联盟</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      CCCP
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://CCCP.github.io/atom.xml" target="_blank">RSS</a>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
     </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+    </div>
+  </div>
+</transition>
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">10月革命</h2>
-            <div class="post-date">2021-03-13</div>
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://CCCP.github.io/post-images/10-yue-ge-ming.png')">
+            </div>
+          
+          <h2 class="post-title">10月革命</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-03-13</span>
             
-              <div class="feature-container" style="background-image: url('https://CCCP.github.io/post-images/10-yue-ge-ming.png')">
-              </div>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://CCCP.github.io/tag/Q9c7HTmO9/">
+                    10月革命
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content" v-pre>
-              <p>俄国十月革命，又称红色十月、十月起义、彼得格勒武装起义或布尔什维克革命，获胜的苏联红军一方称之为“伟大的十月社会主义革命”，是俄国工人阶级在布尔什维克党领导下联合贫农所完成的伟大的社会主义革命，是1917年俄国革命中第二个、也是最后的重要阶段。因发生在俄历（儒略历）1917年10月25日（公历11月7日），故称“十月革命”。<br>
+          </div>
+          <div class="post-content">
+            <p>俄国十月革命，又称红色十月、十月起义、彼得格勒武装起义或布尔什维克革命，获胜的苏联红军一方称之为“伟大的十月社会主义革命”，是俄国工人阶级在布尔什维克党领导下联合贫农所完成的伟大的社会主义革命，是1917年俄国革命中第二个、也是最后的重要阶段。因发生在俄历（儒略历）1917年10月25日（公历11月7日），故称“十月革命”。<br>
 1917年11月7日，以列宁为领导的布尔什维克武装力量向资产阶级临时政府所在地圣彼得堡冬宫发起总攻，推翻了临时政府，建立了苏维埃政权。<br>
 苏联、中国等社会主义国家及左派组织普遍认为十月革命是经伟大革命导师列宁同志领导下的布尔什维克领导的武装起义，建立人类历史上第二个无产阶级政权（第一个是巴黎公社无产阶级政权）和由马克思主义政党领导的第一个社会主义国家──俄罗斯苏维埃联邦社会主义共和国，简称苏俄。革命推翻以克伦斯基为领导的资产阶级俄国临时政府（俄罗斯共和国），为1918年—1920年的苏俄内战和1922年苏维埃社会主义共和国联盟的成立奠定开端。<br>
 十月革命的胜利开创人类历史的新纪元，为世界各国无产阶级革命、殖民地和半殖民地的民族解放运动开辟胜利前进的道路。<img src="https://CCCP.github.io/post-images/1615638444050.png" alt="" loading="lazy"><br>
@@ -86,39 +88,45 @@
 <p>1917年11月6日，列宁秘密来到起义总指挥部——斯莫尔尼宫，亲自领导武装起义。从1917年11月6日夜间到11月7日上午，二十多万革命士兵和起义工人迅速占领了彼得格勒的各个战略要地。7日凌晨1时起义部队占领了邮政总局。2时攻占了波罗的海火车站和尼古拉耶夫斯基火车站。接着关闭了政府大楼的照明电路，电话局切断了临时政府和司令部的大部分电话。6时左右，赤卫队员、士兵和水兵已经占领了皇宫大桥。除了宫廷广场和伊萨基耶夫斯卡广场地区，其他地区几乎都掌握在起义者的手里。临时政府总理克伦斯基坐上美国大使馆的汽车仓皇逃跑。10时，革命军事委员会散发了列宁起草的《告俄国公民书》，宣布临时政府已被推翻，政权已转归苏维埃。   但临时政府仍负隅顽抗，2000多名军官和士官生继续盘踞着冬宫。1917年11月7日下午5时～6时，2万多名革命士兵和赤卫队员、9辆军车包围了冬宫。军事革命总部向临时政府发出最后通牒，命令它于1917年11月7日6时20分缴械投降。8时过后，遭到拒绝。晚上九点四十五分，停泊在涅瓦河上的阿芙乐尔号巡洋舰开炮,发出了总攻的信号。赤卫队员和革命士兵在雷鸣般的“乌拉”声中越过了街垒，迅猛的冲向冬宫，在冬宫的楼梯间里和楼梯上，革命士兵和工人赤卫队员同士官生展开了激烈的白刃战，到1917年11月8日凌晨1917年11月8日1时50分，临时政府的成员（除克伦斯基逃跑外）全部被擒终于被攻克。<br>
 彼得格勒武装起义取得胜利，资产阶级临时政府被击垮，布尔什维克夺得政权，俄国革命将要由革命力量与反革命力量的战略相持转为革命力量的战略反攻。</p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://CCCP.github.io/tag/Q9c7HTmO9/" class="tag">
-                    10月革命
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://CCCP.github.io/post/su-lian-cheng-li-104-zhou-nian/">
-                  <h3 class="post-title">
-                    苏联成立104周年
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://CCCP.github.io/post/su-lian-cheng-li-104-zhou-nian/">
+              <h3 class="post-title">
+                下一篇：苏联成立104周年
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">CCCP</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://CCCP.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -128,8 +136,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 
