@@ -1,14 +1,19 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
-<title>苏联的OGAS计划 | 苏维埃社会主义共和国联盟 Союз советских социалистических республик</title>
+<title>苏联的OGAS计划 | 苏维埃社会主义共和国联盟 </title>
+<meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ppp256.github.io/favicon.ico?v=1615722041920">
+<link rel="shortcut icon" href="https://ppp256.github.io/favicon.ico?v=1615722373867">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ppp256.github.io/styles/main.css">
 
 
@@ -19,77 +24,60 @@
   
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="作者：张义潮
-链接：https://www.zhihu.com/question/54877192/answer/292514027
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-这种超级项目计划如果提早..." />
-    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://ppp256.github.io">
-        <img src="https://ppp256.github.io/images/avatar.png?v=1615722041920" class="site-logo">
-        <h1 class="site-title">苏维埃社会主义共和国联盟 Союз советских социалистических республик</h1>
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://ppp256.github.io">
+        <img class="avatar" src="https://ppp256.github.io/images/avatar.png?v=1615722373867" alt="" width="32px" height="32px">
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+      <a href="https://ppp256.github.io">
+        <h1 class="site-title">苏维埃社会主义共和国联盟 </h1>
+      </a>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="18595815383@163.COM" class="site-nav">
+          <a href="18595815383@163.COM" class="menu purple-link">
             酷安 | QQ @ ORGE1080
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ppp256.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">苏联的OGAS计划</h2>
-            <div class="post-date">2021-03-14</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://ppp256.github.io/post-images/su-lian-de-ogas-ji-hua.png')">
+            </div>
+          
+          <h2 class="post-title">苏联的OGAS计划</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-03-14</span>
             
-              <div class="feature-container" style="background-image: url('https://ppp256.github.io/post-images/su-lian-de-ogas-ji-hua.png')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <p><img src="https://ppp256.github.io/post-images/1615720285547.png" alt="" loading="lazy">作者：张义潮<br>
+          </div>
+          <div class="post-content">
+            <p><img src="https://ppp256.github.io/post-images/1615720285547.png" alt="" loading="lazy">作者：张义潮<br>
 链接：https://www.zhihu.com/question/54877192/answer/292514027<br>
 来源：知乎<br>
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
@@ -106,37 +94,51 @@ OGAS（俄语：Общегосударственная автоматизиро�
 <p>控制论经济计划制定<br>
 从60年代早期开始，苏共就开始考虑从斯大林式的命令式计划转向发展基于控制论用于资源分配的互联计算机化系统。这一致力于计划最优化的系统被认为是发展基于信息去中心化和创新的更高级的社会主义经济的基础。因物料平衡体系需与快速工业化相适应，发展这样的系统是符合逻辑的。但在70年代早期，苏联高层抛弃了这一打破现状的提案，他们害怕这样的系统会损害党对经济的领导力。随之官方对这样的系统也不再抱有兴趣。</p>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://ppp256.github.io/post/zhong-su-jian-jiao/">
-                  <h3 class="post-title">
-                    中苏建交
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://ppp256.github.io/post/zhong-su-jian-jiao/">
+              <h3 class="post-title">
+                下一篇：中苏建交
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  苏维埃社会主义共和国联盟 Союз советских социалистических республик | <a class="rss" href="https://ppp256.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -146,8 +148,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 

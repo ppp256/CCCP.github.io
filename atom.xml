@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ppp256.github.io</id>
-    <title>苏维埃社会主义共和国联盟 Союз советских социалистических республик</title>
-    <updated>2021-03-14T11:44:09.622Z</updated>
+    <title>苏维埃社会主义共和国联盟 </title>
+    <updated>2021-03-14T11:46:18.803Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ppp256.github.io"/>
     <link rel="self" href="https://ppp256.github.io/atom.xml"/>
     <logo>https://ppp256.github.io/images/avatar.png</logo>
     <icon>https://ppp256.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 苏维埃社会主义共和国联盟 Союз советских социалистических республик</rights>
+    <rights>All rights reserved 2021, 苏维埃社会主义共和国联盟 </rights>
     <entry>
         <title type="html"><![CDATA[苏联的OGAS计划]]></title>
         <id>https://ppp256.github.io/post/su-lian-de-ogas-ji-hua/</id>
